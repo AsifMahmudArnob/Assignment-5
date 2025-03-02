@@ -14,160 +14,195 @@
     <header>
         <div class="w-[1280px] mx-auto pb-4">
             <div class="bg-white rounded-xl flex justify-between items-center p-4">
-                <div>
-                    <!-- <img src="./images/logo.png" alt=""> -->
-                    <h1 class="text-4xl">LOGO</h1>
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="text-4xl">Dev <span class="font-bold">Board</span></h1>
                 </div>
-                <div class="flex justify-between gap-4">
-                    <input type="checkbox" name="" id="">
-                    <h1 class="text-4xl">23</h1>
-                    <img src="" alt="">
-                    <h1>O</h1>
+                <div class="flex justify-center gap-4">
+                    <div class="flex w-30 rounded-full bg-sky-50 items-center justify-center gap-3">
+                        <img src="assets/checkbox.png" alt="">
+                        <h1 class="font-bold text-black text-3xl">23</h1>
+                    </div>
+                    <div class="btn btn-ghost"><img src="assets/theme-btn.png" alt=""></div>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <div class="w-[1280px] mx-auto flex justify-between gap-4">
-            <div class="w-[900px] bg-white rounded-xl">
-                <div class="bg-white flex justify-between p-4">
-                    <div class="flex items-center gap-4 bg-gray-100">
+            <div class="w-[1200px] bg-white rounded-xl">
+                <!-- Cards -->
+                <div class="bg-white flex justify-between p-4 gap-1 border-b-2 border-dashed border-blue-50">
+                    <!-- Card-1 -->
+                    <div class="flex justify-center items-center gap-4 bg-blue-50 rounded-lg p-4 w-64">
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <img src="assets/checkbox.png" alt="">
                         </div>
-                        <div>
-                            <p>Task assigned</p>
-                            <h1>05</h1>
-                        </div>
-                    </div>
-                    <div class="bg-blue-200">
-                        <div>
-                            <img src="" alt="">
-                            <h1>Image</h1>
-                        </div>
-                        <div>
-                            <p>Discover something new today?</p>
+                        <div class="">
+                            <p class="text-lg">Task assigned</p>
+                            <h1 class="font-bold text-black text-3xl">05</h1>
                         </div>
                     </div>
-                    <div class="bg-gray-100">
+                    <!-- Card-2 -->
+                    <div class="bg-blue-600 flex items-center justify-center rounded-lg p-6 gap-3">
                         <div>
-                            <img src="" alt="">
-                            <h1>Ic</h1>
+                            <img src="assets/board.png" alt="">
                         </div>
                         <div>
-                            <p>Wed, Jul 28 2025</p>
+                            <p class="text-3xl text-white">Discover something <br> new today!</p>
+                        </div>
+                    </div>
+                    <!-- Card-3 -->
+                    <div class="bg-blue-50 rounded-lg flex justify-center items-center gap-3 p-4 w-64">
+                        <div>
+                            <img src="assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-lg font-semibold">Wed, <span class="font-bold">Jul 28 2025</span></p>
                         </div>
                     </div>
                 </div>
+                <!-- Box's -->
                 <div class="grid grid-cols-3 gap-4 p-4">
-                    <div class="card bg-gray-100 shadow-sm">
+                    <!-- Box-1 -->
+                    <div class="card bg-blue-50 shadow ">
                         <div class="card-body">
-                            <p class="text-lg bg-white rounded-lg w-24 text-center p-2">ShopEase</p>
+                            <p class="text-lg bg-white rounded-lg text-center w-24 p-2">ShopEase</p>
                             <h2 class="card-title text-2xl mt-6">Fix Mobile Button Issue</h2>
-                            <p class="bg-white rounded-lg p-4 mt-6">Resolve mobile button issues by ensuring
+                            <p class="bg-white rounded-lg mt-6 p-3">Resolve mobile button issues by ensuring
                                 responsiveness and proper touch functionality.
                             </p>
-                            <div class="flex gap-[100px] mt-6">
+                            <div class="flex gap-18 mt-6">
                                 <div>
                                     <p>Deadline</p>
                                     <h4 class="font-semibold">5 March 2025</h4>
                                 </div>
-                                <div class="card-actions justify-end">
-                                    <button class="btn btn-primary bg-blue-500 text-white">Completed</button>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary bg-blue-500 text-white border-none">Completed</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-gray-100 shadow-sm">
+                    <!-- Box-2 -->
+                    <div class="card bg-blue-50 shadow">
                         <div class="card-body">
-                            <p class="text-lg bg-white rounded-lg w-24 text-center p-2">ShopEase</p>
-                            <h2 class="card-title text-2xl mt-6">Fix Mobile Button Issue</h2>
-                            <p class="bg-white rounded-lg p-4 mt-6">Resolve mobile button issues by ensuring
-                                responsiveness and proper touch functionality.
+                            <p class="text-lg bg-white rounded-lg w-24 text-center p-2">CloudSync</p>
+                            <h2 class="card-title text-2xl mt-6">Add Dark Mode</h2>
+                            <p class="bg-white rounded-lg p-4 mt-6">Enhance user experience by adding dark mode with
+                                CSS
+                                and JavaScript toggling.
                             </p>
-                            <div class="flex gap-[100px] mt-6">
+                            <div class="flex gap-18 mt-6">
                                 <div>
                                     <p>Deadline</p>
                                     <h4 class="font-semibold">5 March 2025</h4>
                                 </div>
                                 <div class="card-actions justify-end">
-                                    <button class="btn btn-primary bg-blue-500 text-white">Completed</button>
+                                    <button class="btn btn-primary bg-blue-500 text-white border-none">Completed</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-gray-100 shadow-sm">
+                    <!-- Box-3 -->
+                    <div class="card bg-blue-50 shadow">
                         <div class="card-body">
-                            <p class="text-lg bg-white rounded-lg w-24 text-center p-2">ShopEase</p>
-                            <h2 class="card-title text-2xl mt-6">Fix Mobile Button Issue</h2>
-                            <p class="bg-white rounded-lg p-4 mt-6">Resolve mobile button issues by ensuring
-                                responsiveness and proper touch functionality.
+                            <p class="text-lg bg-white rounded-lg w-24 text-center p-2">SwiftPay</p>
+                            <h2 class="card-title text-2xl mt-6">Optimize Home page</h2>
+                            <p class="bg-white rounded-lg p-4 mt-6">Improve performance and user experience by
+                                optimizing the homepage layout and loading
+                                speed.
                             </p>
-                            <div class="flex gap-[100px] mt-6">
+                            <div class="flex gap-18 mt-6">
                                 <div>
                                     <p>Deadline</p>
                                     <h4 class="font-semibold">5 March 2025</h4>
                                 </div>
                                 <div class="card-actions justify-end">
-                                    <button class="btn btn-primary bg-blue-500 text-white">Completed</button>
+                                    <button class="btn btn-primary bg-blue-500 text-white border-none">Completed</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-gray-100 shadow-sm">
+                    <!-- Box-4 -->
+                    <div class="card bg-blue-50 shadow">
                         <div class="card-body">
-                            <p class="text-lg bg-white rounded-lg w-24 text-center p-2">ShopEase</p>
-                            <h2 class="card-title text-2xl mt-6">Fix Mobile Button Issue</h2>
-                            <p class="bg-white rounded-lg p-4 mt-6">Resolve mobile button issues by ensuring
-                                responsiveness and proper touch functionality.
+                            <p class="text-lg bg-white rounded-lg w-24 text-center p-2">Meta</p>
+                            <h2 class="card-title text-2xl mt-6">Add new emoji 🤲</h2>
+                            <p class="bg-white rounded-lg p-4 mt-6">Enhance engagement by adding new emojis for a
+                                more
+                                expressive user experience.
                             </p>
-                            <div class="flex gap-[100px] mt-6">
+                            <div class="flex gap-18 mt-6">
                                 <div>
                                     <p>Deadline</p>
                                     <h4 class="font-semibold">5 March 2025</h4>
                                 </div>
                                 <div class="card-actions justify-end">
-                                    <button class="btn btn-primary bg-blue-500 text-white">Completed</button>
+                                    <button class="btn btn-primary bg-blue-500 text-white border-none">Completed</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-gray-100 shadow-sm">
+                    <!-- Box-5 -->
+                    <div class="card bg-blue-50 shadow">
                         <div class="card-body">
-                            <p class="text-lg bg-white rounded-lg w-24 text-center p-2">ShopEase</p>
-                            <h2 class="card-title text-2xl mt-6">Fix Mobile Button Issue</h2>
-                            <p class="bg-white rounded-lg p-4 mt-6">Resolve mobile button issues by ensuring
-                                responsiveness and proper touch functionality.
+                            <p class="text-lg bg-white rounded-lg w-30 text-center p-2">Google LLC</p>
+                            <h2 class="card-title text-2xl mt-6">Integrate OpenAI API</h2>
+                            <p class="bg-white rounded-lg p-4 mt-6">Enhance functionality by integrating the OpenAI
+                                API
+                                for AI-powered features and
+                                automation.
                             </p>
-                            <div class="flex gap-[100px] mt-6">
+                            <div class="flex gap-18 mt-6">
                                 <div>
                                     <p>Deadline</p>
                                     <h4 class="font-semibold">5 March 2025</h4>
                                 </div>
                                 <div class="card-actions justify-end">
-                                    <button class="btn btn-primary bg-blue-500 text-white">Completed</button>
+                                    <button class="btn btn-primary bg-blue-500 text-white border-none">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Box-6 -->
+                    <div class="card bg-blue-50 shadow">
+                        <div class="card-body">
+                            <p class="text-lg bg-white rounded-lg w-30 text-center p-2">Glassdoar</p>
+                            <h2 class="card-title text-2xl mt-6">Improve Job searching</h2>
+                            <p class="bg-white rounded-lg p-4 mt-6">Enhance job searching with better filters,
+                                faster
+                                results, and a user-friendly
+                                experience.
+                            </p>
+                            <div class="flex gap-18 mt-6">
+                                <div>
+                                    <p>Deadline</p>
+                                    <h4 class="font-semibold">5 March 2025</h4>
+                                </div>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-primary bg-blue-500 text-white border-none">Completed</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="w-[400px] bg-white flex flex-col">
+            <div class="w-[300px] bg-white flex flex-col">
                 <div class="w-full border-b-2 border-dashed flex flex-col justify-center items-center">
                     <div>
-                        <div class="flex gap-4 justify-center">
-                            <h1>O</h1>
+                        <div class="flex gap-4 justify-center mt-5">
+                            <img src="assets/activity.png" alt="">
                             <p>Activity log</p>
                         </div>
-                        <button class="bg-blue-400 px-4 py-2 rounded-xl">Clear History</button>
+                        <button class="bg-blue-600 px-4 py-2 rounded-lg text-white mt-5 mb-5 btn btn-primay">Clear History</button>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 p-4">
-                    <div class="bg-gray-100 p-4 rounded-xl">
+                    <div class="bg-blue-50 p-4 rounded-xl">
                         <p>You have completed the task Add</p>
                         <p>Dark mode at 12:48:15</p>
                     </div>
-                    <div class="bg-gray-100 p-4 rounded-xl">
+                    <div class="bg-blue-50 p-4 rounded-xl">
                         <p>You have completed the task Add</p>
                         <p>Dark mode at 12:48:15</p>
                     </div>
@@ -175,7 +210,7 @@
             </div>
         </div>
     </main>
-
+<script src="Script/blogs.js"></script>
 </body>
 
 </html>
