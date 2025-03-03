@@ -14,6 +14,7 @@ document.getElementById("themeColor").addEventListener("click", function () {
   colorIndex = (colorIndex + 1) % colors.length;
 })
 
+
 // Date
 
 const date = new Date();
@@ -51,7 +52,10 @@ function completeFunction(button) {
 
       activityDiv.classList.add("bg-blue-50", "p-4", "rounded-xl");
       activityTitle.innerText = `You have completed the task ${title}`;
-      activityTime.innerText = `Dark mode at 12:48:15`;
+
+      let completeDate = new Date();
+      let currentTime = completeDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      activityTime.innerText = `at ${currentTime}`;
 
       document.getElementById("activityLogs").appendChild(activityDiv);
 
@@ -74,7 +78,10 @@ function completeFunction(button) {
 
     activityDiv.classList.add("bg-blue-50", "p-4", "rounded-xl");
     activityTitle.innerText = `You have completed the task ${title}`;
-    activityTime.innerText = `Dark mode at 12:48:15`;
+
+    const completeDate = new Date();
+    let currentTime = completeDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    activityTime.innerText = `at ${currentTime}`;
 
     document.getElementById("activityLogs").appendChild(activityDiv);
 
